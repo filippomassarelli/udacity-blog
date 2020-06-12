@@ -1,0 +1,86 @@
+/* ----------- Homepage layout */
+
+@import "./layout.css";
+
+/* ----------- Typography */
+
+@import "./typography.css";
+
+/* ----------- Head */
+
+@import "./head.css";
+
+.post-snippet {
+  margin: auto 0;
+}
+
+.post-snippet h1:hover {
+  /* text-decoration: underline;
+  text-decoration-color: transparent; */
+  color: #e27e05;
+}
+
+footer p {
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  margin: auto;
+}
+
+.cta {
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border-color: #2c3f4f;
+
+  background-color: #ffe8d6;
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  color: #2c3f4f;
+  font-weight: bolder;
+
+  margin: 1rem 0;
+}
+
+.cta:hover {
+  border-color: #e27e05;
+  background-color: #e27e05;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside input {
+  padding: 0.15rem 0;
+  text-align: center;
+
+  border-width: 0.11rem;
+  border-color: #2c3f4f;
+  background-color: transparent;
+
+  font-family: "Roboto Mono", monospace;
+}
+
+.input-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: none;
+}
+
+.input-bottom {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top: none;
+}
+
+aside img {
+  height: 15%;
+  margin: 1rem;
+  z-index: 1;
+}
+@media (max-width: 900px) {
+  aside img {
+    width: 10%;
+  }
+}
