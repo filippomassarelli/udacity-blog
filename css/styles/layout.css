@@ -1,7 +1,9 @@
+/* ----------- Styles for any viewport */
+
 body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 15vh minmax(35em, 70vh) 15vh;
+  grid-template-rows: 15vh minmax(fit-content, 70vh) 15vh;
   grid-gap: 1em;
 
   margin: auto;
@@ -11,9 +13,17 @@ body {
   background-color: #ffebdc;
 }
 
+main {
+  grid-column: 1 / span 3;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  padding-right: 2em;
+}
+
 aside {
   border-radius: 2em;
-  padding: 1.75em;
+  padding: 1.5em;
   background-color: #ff8e162f;
   text-align: center;
 }
@@ -30,13 +40,13 @@ footer {
   grid-column: 1 / span 5;
 }
 
-main {
-  grid-column: 1 / span 3;
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  padding-right: 2em;
+footer p {
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  margin: auto;
 }
+
+/* ----------- Styles for large screens */
 
 @media (max-width: 900px) {
   body {
@@ -68,6 +78,8 @@ main {
   }
 }
 
+/* ----------- Styles for mobile */
+
 @media (min-width: 900px) {
   aside {
     display: grid;
@@ -75,9 +87,11 @@ main {
     grid-gap: 0.5em;
     grid-column: span 2;
     justify-items: center;
+    margin: auto 0;
+  }
 
-    min-height: 25em;
-    margin: 2em 0;
+  aside img {
+    min-height: 4em;
   }
 
   footer {
@@ -86,5 +100,6 @@ main {
 
   main {
     min-height: fit-content;
+    margin-bottom: 2em;
   }
 }

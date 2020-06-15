@@ -1,95 +1,27 @@
-/* ----------- Homepage layout */
+/* ----------- Layout */
 
-@import "./layout.css";
+@import "./styles/layout.css";
 
 /* ----------- Typography */
 
-@import "./typography.css";
+@import "./styles/typography.css";
 
 /* ----------- Head */
 
-@import "./head.css";
+@import "./styles/head.css";
 
-.card {
-  margin: auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+/* ----------- Cards and CTAs */
 
-  border-radius: 2em;
-  padding: 1em;
-}
+@import "./styles/card-and-cta.css";
 
-.card:hover {
-  transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
-    0 24px 46px var(--box-shadow-color);
+/* ----------- Sidebar */
 
-  background-color: #ff8e162f;
-}
+@import "./styles/aside.css";
 
-footer p {
-  font-size: 1rem;
-  font-family: "Roboto Mono", monospace;
-  margin: auto;
-}
+/* ----------- Post Image */
 
-.cta {
-  border-radius: 0.5rem;
-  padding: 0.2rem 0.5rem;
-  border-color: #2c3f4f;
+@import "./styles/post-image.css";
 
-  background-color: #ffe8d6;
-  font-size: 1rem;
-  font-family: "Roboto Mono", monospace;
-  color: #2c3f4f;
-  font-weight: bolder;
+/* ----------- About's Profile layout */
 
-  margin: 1rem 0;
-}
-
-.cta:hover {
-  border-color: #e27e05;
-  background-color: #e27e05;
-}
-
-.aside {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.aside input {
-  padding: 0.15rem 0;
-  text-align: center;
-
-  border-width: 0.11rem;
-  border-color: #2c3f4f;
-  background-color: transparent;
-
-  font-family: "Roboto Mono", monospace;
-}
-
-.input-top {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  border-bottom: none;
-}
-
-.input-bottom {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  border-top: none;
-}
-
-aside img {
-  height: 15%;
-  margin: 1rem;
-  z-index: 1;
-}
-@media (max-width: 900px) {
-  aside img {
-    width: 10%;
-  }
-}
+@import "./styles/profile.css";

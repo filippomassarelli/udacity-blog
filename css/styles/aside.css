@@ -1,0 +1,45 @@
+/* ----------- Sidebar */
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ----------- Form */
+
+.aside input {
+  padding: 0.15rem 0;
+  text-align: center;
+
+  border-width: 0.11rem;
+  border-color: #2c3f4f;
+  background-color: transparent;
+
+  font-family: "Roboto Mono", monospace;
+}
+
+.input-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: none;
+}
+
+.input-bottom {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top: none;
+}
+
+/* ----------- Sidebar Image */
+
+aside img {
+  height: 15%;
+  margin: 1rem;
+  z-index: 1;
+}
+@media (max-width: 900px) {
+  aside img {
+    width: 10%;
+  }
+}
