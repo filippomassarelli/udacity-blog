@@ -1,6 +1,6 @@
 # Personal Blog Website 
 
-The first project submission for Udacity's [Front End Nanodegree] (https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011).
+The first project submission for Udacity's [Front End Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011).
 
 ## Objective
 
@@ -8,9 +8,9 @@ This project requires you to utilize your HTML and CSS skills to build out a per
 
 ## Result
 
-This project is deployed with GitHub Pages and can be accessed [here] (https://filippomassarelli.github.io/udacity-blog/index.html)
+This project is deployed with GitHub Pages and can be accessed [here](https://filippomassarelli.github.io/udacity-blog/index.html)
 
-Preview screenshots below show the home, about and blog post pages.
+Preview screenshots below showcase how the home, about and blog post pages look on large screens (viewport width greater than 900px).
 
 ![Alt text](./images/home-screenshot.png?raw=true "Home page")
 
