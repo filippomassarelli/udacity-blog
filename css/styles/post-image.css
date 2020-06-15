@@ -1,12 +1,7 @@
 .image-frame {
-  background-color: #beb3aca9;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 250px;
-  font-style: italic;
-  color: #2c3f4f;
 }
 
 .image-placeholder {
@@ -14,4 +9,10 @@
   height: 200px;
   width: 400px;
   text-align: center;
+}
+
+figure img {
+  width: 100%;
+  border: solid #2c3f4f 0.1em;
+  margin: 1em 0;
 }
